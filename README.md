@@ -69,3 +69,8 @@ Not all files/dirs are needed here, but it can be cleaned up later. You will wan
 1. `msbuild .\test_app.vcxproj /property:Configuration=Release`
 1. `.\Release\test_app.exe`
 1. Tinker and make the app you desire!
+
+# Notes
+
+- I have never successfully built a project on windows using a [SimpleBLE release package](https://github.com/OpenBluetoothToolbox/SimpleBLE/releases), so if anyone has guidance on that method, please share!
+- Building as release is only required if using vcpkg. It will build as debug, but not with all required files.
