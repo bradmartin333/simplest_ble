@@ -4,8 +4,13 @@ Following these steps, you will be able to build a C++ app on Windows that runs 
 
 ### Options
 
+**Included**  
 🟢 vcpkg (cleanest) - install vcpkg following [these instructions](https://vcpkg.io/en/getting-started)  
-🔵 git (fastest) - you will need a working [installation of git](https://git-scm.com/download/win)  
+🔵 git - you will need a working [installation of git](https://git-scm.com/download/win)  
+
+**Not-included**  
+🔴 [SimpleBLE release package](https://github.com/OpenBluetoothToolbox/SimpleBLE/releases) - never get it to work on Windows, so if someone knows how to, please share!  
+🟡 installing to Program Files - it is easy enough to [install following the instructions](https://simpleble.readthedocs.io/en/latest/simpleble/usage.html#building-and-installing-simpleble-source), but was never able to get CMake to work with this method (share if you know how!)  
 
 In the current state of this repo, it is configured for the vcpkg option. So, if you can already build C++ apps with CMake on Windows and have vcpkg installed, you can clone and skip to the [end](#build-and-run). If not, these instructions will set you up for that.
 
@@ -70,7 +75,6 @@ Not all files/dirs are needed here, but it can be cleaned up later. You will wan
 1. `.\Release\test_app.exe`
 1. Tinker and make the app you desire!
 
-# Notes
+**Notes**  
 
-- I have never successfully built a project on windows using a [SimpleBLE release package](https://github.com/OpenBluetoothToolbox/SimpleBLE/releases), so if anyone has guidance on that method, please share!
-- Building as release is only required if using vcpkg. It will build as debug, but not with all required files.
+- Building as release is only required if using vcpkg. It will build as debug, but not with all required files. There might be a way to fix that.
