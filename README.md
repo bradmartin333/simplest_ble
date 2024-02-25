@@ -77,4 +77,4 @@ Not all files/dirs are needed here, but it can be cleaned up later. You will wan
 
 **Notes**  
 
-- Building as release is only required if using vcpkg. It will build as debug, but not with all required files. There might be a way to fix that.
+- Build with `cmake .. -DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake\` to include necessary libs for a Debug build
